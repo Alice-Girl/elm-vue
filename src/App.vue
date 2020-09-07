@@ -22,6 +22,7 @@
         method: 'get',
         url: '/api/seller',
       })
+      // 注意点： this 指向
       .then(response =>{
         this.seller = response.data.data
       })
