@@ -26,6 +26,7 @@ export default {
 
 <style scoped lang="scss">
 .tab {
+  width: 100%;
   display: flex;
   flex-direction: row;
 

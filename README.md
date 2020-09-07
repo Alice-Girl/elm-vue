@@ -48,5 +48,23 @@
 （3）：设置链接激活时使用的 CSS 类名。默认值可以通过路由的构造选项 linkActiveClass 来全局配置。
 ```
 
+#### 四： 接口请求
+
+- 使用的是 `axios` 插件进行请求接口
+   - 参考资料 [github中的axios](https://github.com/axios/axios) 
+   - [官方演示案例](https://cn.vuejs.org/v2/cookbook/using-axios-to-consume-apis.html)
+   - 可以查看源码文档，下载插件包以后进行点击源码里面进行查看
+```js
+// 1: 执行请求 【get 、post 、put ...】
+
+   axios.get('url', {}).then(res => res)
+
+// 2: 可以通过向 axios 传递相关配置来创建请求
+   axios({
+     method: 'get/post',
+     url: 'url',
+     data: {}
+   })
+```
 
 
