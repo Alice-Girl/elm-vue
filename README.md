@@ -22,4 +22,16 @@
 
 - `Mock` 数据
 
-
+   - 读取 `mock` 数据
+   - 根据 `webpack` 内部机制 [参考资料](https://webpack.js.org/configuration/dev-server/#devserverbefore)
+   - 反问 `本地地址` + **/api/seller**
+```javascript
+    devServer: {
+        before: function(app, server, compiler) {
+          app.get('/api/seller', function(req, res) {
+            res.json({ data: Seller });
+          });
+        }
+    }
+    ...
+```
