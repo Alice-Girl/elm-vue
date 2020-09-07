@@ -40,6 +40,13 @@
 
 - 使用 **reset.css** [参考资料](https://meyerweb.com/eric/tools/css/reset/)
 
+- tab栏点击元素样式动态变化 [参考资料](https://router.vuejs.org/zh/api/#router-link)
+
+```text
+（1）: isActive：如果需要应用激活的 class 则为 true。允许应用一个任意的 class。
+（2）：isExactActive：如果需要应用精确激活的 class 则为 true。允许应用一个任意的 class。
+（3）：设置链接激活时使用的 CSS 类名。默认值可以通过路由的构造选项 linkActiveClass 来全局配置。
+```
 
 
 
